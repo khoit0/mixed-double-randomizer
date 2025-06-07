@@ -87,6 +87,10 @@
     }
 
     function generateTeams() {
+      const button = document.querySelector("button");
+  button.disabled = true;
+  button.textContent = "✅ Nuh uh only once";
+    
       const boysInput = document.getElementById("boys").value.trim().split("\n").filter(name => name.trim() !== "");
       const girlsInput = document.getElementById("girls").value.trim().split("\n").filter(name => name.trim() !== "");
 
