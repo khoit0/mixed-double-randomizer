@@ -89,7 +89,7 @@
     function generateTeams() {
       const button = document.querySelector("button");
   button.disabled = true;
-  button.textContent = "✅ Nuh uh only once";
+  button.textContent = "✅ Nuh Uh Only One Time";
     
       const boysInput = document.getElementById("boys").value.trim().split("\n").filter(name => name.trim() !== "");
       const girlsInput = document.getElementById("girls").value.trim().split("\n").filter(name => name.trim() !== "");
@@ -112,13 +112,6 @@
 
       document.getElementById("output").innerHTML = output;
 
-  document.getElementById("boys").addEventListener("input", resetButton);
-document.getElementById("girls").addEventListener("input", resetButton);
-
-function resetButton() {
-  const button = document.querySelector("button");
-  button.disabled = false;
-  button.textContent = "🎲 Randomize Teams";
     }
   </script>
 </body>
