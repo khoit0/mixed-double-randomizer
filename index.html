@@ -111,6 +111,14 @@
       }
 
       document.getElementById("output").innerHTML = output;
+
+  document.getElementById("boys").addEventListener("input", resetButton);
+document.getElementById("girls").addEventListener("input", resetButton);
+
+function resetButton() {
+  const button = document.querySelector("button");
+  button.disabled = false;
+  button.textContent = "🎲 Randomize Teams";
     }
   </script>
 </body>
